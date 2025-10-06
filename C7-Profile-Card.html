@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Card</title>
+  <style>
+    .image{
+      height: 180px;
+      width: 180px;
+      border-radius: 20%;
+      object-fit: cover;
+
+    }
+    *{
+      /* background-color: rgb(215, 210, 210); */
+    }
+
+    .cards{
+      display: flex;
+      align-items: center;
+      border: 1px solid black;
+      box-shadow: 1px 1px 1px gray;
+      padding: 10px;
+      border-radius: 20px;
+      margin: auto;
+      width: 500px;
+      /* background-color: #fff; */
+
+    }
+
+    .part1{
+      margin-right: 20px;
+    }
+
+    button{
+      background-color: rgb(119, 119, 234);
+      border: none;
+      color: white;
+      border-radius: 8px;
+      height: 25px;
+      width: auto;
+      
+    }
+
+    @media(max-width:640px) {
+      .cards{
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      /* .part2{
+        display: flex;
+        flex-direction: column;
+        
+      } */
+
+      button{
+        /* width: 500px; */
+        /* margin: 3px; */
+        /* width: auto; */
+        /* margin: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+    }
+  </style>
+
+  
+</head>
+<body>
+
+  <div class="cards">
+
+    <div class="part1">
+
+      <img class="image" src="profile.webp" alt="profile image">
+      <h2>Pat Cummins</h2>
+    </div>
+
+    <div class="part2">
+      <p>Hey there! I'm Pat Cummins, also known as the father of India. I started my cricket journey since childhood and kohli is chokli. Bye guys!! </p>
+      <button >Contact</button>
+      <button>Portfolio</button>
+
+    </div>
+    
+    
+  </div>
+  
+</body>
+</html>

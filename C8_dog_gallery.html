@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #fafafd;
+            margin: 0;
+            padding: 24px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .dog-img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+            transition: border 0.2s, box-shadow 0.2s;
+            border: 3px solid transparent;
+            display: block;
+        }
+        .dog-img:hover {
+            border: 3px solid black;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.20);
+        }
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Dog Gallery</h1>
+    <div class="gallery">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" alt="Dog 1">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1507146426996-ef05306b995a" alt="Dog 2">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1517821099602-2030e937d3b8" alt="Dog 3">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1465101178521-c1a087e1118a" alt="Dog 4">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="Dog 5">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Dog 6">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1518715308788-3002a19ee45b" alt="Dog 7">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1518715308788-3002a19ee45b" alt="Dog 8">
+        <img class="dog-img" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b" alt="Dog 9">
+    </div>
+</body>
+</html>
